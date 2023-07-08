@@ -69,7 +69,7 @@ const appkey="fdcb5b9745097d2dc601e7663dca0bed";
                 const icon = we.weather[0].icon ;
                 const imageicon=" https://openweathermap.org/img/wn/"+icon+"@2x.png"
                 
-                res.write("<p>The weather is currently "+ wed + "</p> ");
+                res.write("<p>The weather is currently "+ wed + "</p> " +"in" + place);
                 res.write( " <h1>the temperature is " + temp+ " and weather description is "+wed +"</h1>");
                 res.write(" <img src =" + imageicon+ ">");
             }
